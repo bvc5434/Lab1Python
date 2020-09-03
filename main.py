@@ -5,10 +5,10 @@ temp = input("Enter temperature: ")
 temp = float(temp)
 units = input("Enter unit in F/f or C/c: ")
 if (units == "C" or units == "c"):
-  b = 32+((temp/5)*9)
+  b = 32+(9/5)*temp
   print(f"{temp}° in Celsius is equivalent to {b}° Fahrenheit.")
 elif (units == "F" or units == "f"):
-  b = 5*(temp-32)/9
-  print(f"{temp}° in Fahrenheit is equivalent to {b}° Celsius.")
+  b = (temp-32)*5/9
+  print (f"{temp}° in Fahrenheit is equivalent to {b}° Celsius.")
 else:
   print(f"Invalid unit({units}).")
